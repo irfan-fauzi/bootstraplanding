@@ -1,0 +1,426 @@
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-family: Viga;
+  font-size: 18px;
+}
+
+/* utility */
+.tombol {
+
+  text-transform: uppercase;
+  border-radius: 30px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron {
+  background-image: url('img/deal.png');
+  background-size: cover;
+  height: 380px;
+  text-align: center;
+  position: relative;
+
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgb(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4 {
+  font-weight: 200;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  font-size: 28px;
+  margin-top: 70px;
+
+}
+
+.jumbotron .display-4 span {
+  font-weight: bold;
+}
+
+.jumbotron .tombol {
+  margin-top: 30px;
+}
+
+.info-panel {
+
+  background-color: blanchedalmond;
+  box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.7);
+  margin-top: -80px;
+  border-radius: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.info-panel img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.info-panel p {
+
+  font-size: 9px;
+  color: #acacac;
+}
+
+.workingspace {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.workingspace h3 {
+  font-size: 21px;
+
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+
+.workingspace p {
+  font-size: 13px;
+
+}
+
+.workingspace span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.workingspace .tombol {
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.planning {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.plan1 {
+  text-align: center;
+}
+
+.planning h4 {
+  font-size: 20px;
+}
+
+.plan1 .no1 {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.plan1 h3 {
+  color: black;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.plan1 span {
+  font-weight: bold;
+}
+
+.plan1 p {
+  font-size: 13px;
+  color: dimgrey;
+}
+
+.plan1 .consult {
+  border-radius: 20px;
+}
+
+.plan2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.plan2 .simulasi {
+  border-radius: 20px;
+}
+
+.plan2 .no2 {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.plan2 h3 {
+  color: black;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.plan2 span {
+  font-weight: bold;
+}
+
+.plan2 p {
+  font-size: 13px;
+}
+
+.plan3 {
+  text-align: center;
+}
+
+.plan3 h3 {
+  color: dimgrey;
+}
+
+.plan3 p {
+  color: dimgrey;
+}
+
+.plan3 span {
+  font-weight: bold;
+}
+
+.plan3 {}
+
+.plan3 .no3 {
+  width: 35px;
+  height: 35px;
+}
+
+@media (min-width: 992px) {
+
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .navbar-brand {
+    font-size: 35px;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    /* membuat garis warna biru */
+    border-bottom: 3px solid #0b63dc;
+    /* panjang garis hover 50% dari text diatasnya */
+    width: 50%;
+    /* margin auto = supaya garis hover berada di tengah */
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+
+  }
+
+  .jumbotron {
+    height: 580px;
+    margin-top: -80px;
+    text-align: center;
+    background-size: cover;
+  }
+
+  .jumbotron .display-4 {
+    font-weight: 200;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    margin-top: 90px;
+    font-size: 64px;
+
+  }
+
+  .jumbotron .display-4 span {
+    font-weight: bold;
+  }
+
+  .jumbotron .tombol {
+    margin-top: 30px;
+  }
+
+  .info-panel {
+
+    background-color: blanchedalmond;
+    border-radius: 12px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    margin-top: -120px;
+    padding: 30px;
+    padding-bottom: 10px;
+    ;
+  }
+
+  .info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .info-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  .info-panel p {
+
+    font-size: 14px;
+    color: #acacac;
+  }
+
+  .workingspace {
+    margin-top: 60px;
+    text-align: left;
+  }
+
+  .workingspace img {
+    margin-top: -30px;
+  }
+
+  .workingspace h3 {
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: left;
+    font-weight: 200;
+    color: dimgrey;
+  }
+
+  .workingspace p {
+    text-align: left;
+  }
+
+  .workingspace .tombol {
+    margin-top: 10px;
+    margin-left: auto;
+
+  }
+
+  .planning {
+    text-align: center;
+    color: dimgrey;
+    margin-top: 30px;
+    margin-bottom: 90px;
+
+  }
+
+  .planning h4 {
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .plan1 .no1 {
+    height: 35px;
+    width: 45px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .plan1 h3 {
+    font-weight: 200;
+    color: dimgrey;
+    text-align: left;
+  }
+
+  .plan1 span {
+    font-weight: bold;
+  }
+
+  .plan1 p {
+    color: dimgrey;
+    text-align: justify;
+  }
+
+  .plan2 {
+    margin-top: 130px;
+  }
+
+  .plan2 .simulasi {
+    width: 524px;
+    height: 308px;
+  }
+
+  .plan2 .simulasi {
+    border-radius: 20px;
+  }
+
+  .plan2 .no2 {
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+    margin-bottom: -10px;
+  }
+
+  .plan2 h3 {
+    color: dimgrey;
+    font-weight: 200;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+  }
+
+  .plan2 span {
+    font-weight: bold;
+  }
+
+  .plan2 p {
+    font-size: 13px;
+    margin-top: -20px;
+    color: dimgrey;
+  }
+
+  .plan3 {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .plan3 .no3 {
+
+    margin-top: 150px;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 30px;
+  }
+
+  .plan3 h3 {
+    font-weight: 200;
+    color: dimgrey;
+  }
+
+  .plan3 p {
+    font-size: 14px;
+  }
+
+  .fitur {
+    text-align: center;
+
+  }
+}
